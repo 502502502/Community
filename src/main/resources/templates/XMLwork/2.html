@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>公司员工个人信息</title>
+</head>
+<body>
+<div style="margin-left: auto;margin-right: auto;width: fit-content;margin-top: 30px">
+  <form method="post" action="">
+    <span  style="text-align: center;background-color: #dcdadc;width: auto">公司员工个人信息</span><br/>
+      <label style="width: 10px">工号：</label>
+      <input type="text"><br/>
+      <label>姓名：</label>
+      <input type="text"><br/>
+      <label>性别：</label>
+      <input type="radio" name="sex" checked>女
+      <input type="radio" name="sex" checked>男<br/>
+      <label>出生日期：</label>
+      <input type="text"><br/>
+      <label>所学专业：</label>
+      <select name="zhuanye" id="zhaunye">
+          <option>机械制造</option>
+          <option>计算机</option>
+          <option>电子</option>
+      </select><br>
+      <label>所属部门：</label>
+      <select name="department" id="department">
+          <option>安全部</option>
+          <option>一车间</option>
+          <option>质检部</option>
+      </select><br/>
+      <label>家庭情况:</label>
+      <textarea rows="5"></textarea><br/>
+      <label>特长:</label>
+      <input type="checkbox" name="run">跑步
+      <input type="checkbox" name="read">阅读
+      <input type="checkbox" name="buy">购物<br/>
+      <input type="submit" value="提交">
+      <input type="button" value="重置" onclick="">
+  </form>
+</div>
+</body>
+</html>

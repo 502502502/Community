@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>课程表</title>
+</head>
+<body>
+
+
+    <h1 align="center">课程表</h1>
+    <table width="400" border="1" style="margin-left: auto;margin-right: auto;">
+        <tr>
+            <td>
+                <button type="button" id="com" >计算机组成原理</button>
+            </td>
+            <td>
+                <button type="button" id="jav">Java程序性设计</button>
+            </td>
+            <td>
+                <button type="button" id="ana">算法分析</button>
+            </td>
+            <td>
+                <button type="button" id="mat">微积分</button>
+            </td>
+            <td>
+                <button type="button" id="web">计算机网络</button>
+            </td>
+        </tr>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script th:src="@{/js/xmlWork.js}"></script>
+</body>
+</html>

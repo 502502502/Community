@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登记</title>
+</head>
+<body>
+<div style="margin-left: auto;margin-right: auto;width: fit-content;margin-top: 200px">
+    <form method="post" action="">
+        <span style="text-align: center;background-color: #dcdadc;width: auto">用户登记</span><br/>
+
+        <label style="width: 10px">用户名：</label>
+        <input type="text" id="name"><br/>
+
+        <label>口令：</label>
+        <input type="text" id="password"><br/>
+
+        <input type="button" value="提交" id="submit">
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#submit").click(click);
+    });
+
+    function click() {
+        //获取用户名和密码
+        var name = $("#name").val();
+        var pas = $("#password").val();
+
+        //检查账号是否为空
+        if (name.length == 0) {
+            alert("用户名不能为空！");
+            return;
+        }
+        //检查账号是否存在
+        if (localStorage.getItem(name) != null) {
+            alert("该用户名已存在！");
+            return;
+        }
+        //检查密码长度
+        if (pas.length < 10) {
+            alert("密码长度不能小于10！");
+            return;
+        }
+        //检查密码是否包含数字
+        var regex = new RegExp('(?=.*[0-9])');
+        if (!regex.test(pas)) {
+            alert("密码中必须包含数字，请及时改密码！");
+            return;
+        }
+        //是否包含大写字母
+        regex = new RegExp('(?=.*[A-Z])');
+        if (!regex.test(pas)) {
+            alert("密码中必须包含大写字母，请及时改密码！");
+            return;
+        }
+        //是否包含小写字母
+        regex = new RegExp('(?=.*[a-z])');
+        if (!regex.test(pas)) {
+            alert("密码中必须包含小写字母，请及时改密码！");
+            return;
+        }
+
+        //密码合格，存入本地
+        localStorage.setItem(name,pas);
+        alert("登记成功！");
+    }
+</script>
+</body>
+</html>

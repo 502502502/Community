@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 外部引入DTD -->
+<!DOCTYPE catalog SYSTEM "catalog.dtd">
+<!--引用XSL显示数据-->
+<?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
+
+
+<!--XML描述-->
+<catalog>
+    <cd>
+        <title>Emre Burlee</title>
+        <artist>Bob Dylan  1</artist>
+        <country>USA</country>
+        <company>Columbia</company>
+        <price>7.90</price>
+        <year>1985</year>
+    </cd>
+    <cd>
+        <title>Uncn my hea</title>
+        <artist>Joe Cocker</artist>
+        <country>USA</country>
+        <company>EMI</company>
+        <price>8.20</price>
+        <year>1987</year>
+    </cd>
+    <cd>
+        <title>Empire lesque</title>
+        <artist>Bob Dyl</artist>
+        <country>USA</country>
+        <company>Columbia</company>
+        <price>10.90</price>
+        <year>1977</year>
+    </cd>
+    <cd>
+        <title>hain my heart</title>
+        <artist>Joe Cocr</artist>
+        <country>USA</country>
+        <company>EMI</company>
+        <price>9.20</price>
+        <year>1987</year>
+    </cd>
+    <cd>
+        <title>Empdve Bcsj lue</title>
+        <artist>Bob Dyn</artist>
+        <country>USA</country>
+        <company>Columbia</company>
+        <price>10.70</price>
+        <year>1976</year>
+    </cd>
+    <cd>
+        <title>dcfb hear  dt</title>
+        <artist>Joe Cocker</artist>
+        <country>USA</country>
+        <company>EMI</company>
+        <price>9.22</price>
+        <year>1990</year>
+    </cd>
+    <cd>
+        <title>Empurles que</title>
+        <artist>Bb Dylan</artist>
+        <country>USA</country>
+        <company>Columbia</company>
+        <price>7.45</price>
+        <year>1991</year>
+    </cd>
+    <cd>
+        <title>aicdsjvn my heart</title>
+        <artist>Joe Cocker</artist>
+        <country>USA</country>
+        <company>EMI</company>
+        <price>8.89</price>
+        <year>1994</year>
+    </cd>
+    <cd>
+        <title>Empire  Gjdkc Burlescdsjke</title>
+        <artist>Bob Dylan</artist>
+        <country>USA</country>
+        <company>Columbia</company>
+        <price>9.50</price>
+        <year>1999</year>
+    </cd>
+    <cd>
+        <title>Unchain cdnsj heart</title>
+        <artist>Joe Cocker</artist>
+        <country>USA</country>
+        <company>EMI</company>
+        <price>7.64</price>
+        <year>1998</year>
+    </cd>
+    <cd>
+        <title>Empire Burbjdb</title>
+        <artist>Bob Dylan</artist>
+        <country>USA</country>
+        <company>Columbia</company>
+        <price>10.90</price>
+        <year>1997</year>
+    </cd>
+    <cd>
+        <title>no my heart</title>
+        <artist>Joe Cocker</artist>
+        <country>USA</country>
+        <company>EMI</company>
+        <price>7.20</price>
+        <year>1996</year>
+    </cd>
+</catalog>
